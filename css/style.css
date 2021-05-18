@@ -1,59 +1,73 @@
+@import url(/css/container.css);
+@import url(/css/blocks/header/header.css);
+@import url(/css/blocks/header/header__content.css);
+@import url(/css/blocks/header/header__logo.css);
+@import url(/css/blocks/header/header__logo-name.css);
+@import url(/css/blocks/header/header__menu.css);
+@import url(/css/blocks/header/header__menu-list.css);
+@import url(/css/blocks/header/header__menu-link.css);
+
 @font-face {
     font-family: 'Montserrat-Light';
     font-style: normal;
     font-weight: 300;
-    src: local(Montserrat), url(../fonts/Montserrat-Light.ttf);
+    src: local(Montserrat-Light), url(../fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
     font-family: 'Montserrat-Regular';
     font-style: normal;
     font-weight: 400;
-    src: local(Raleway), url(../fonts/Montserrat-Regular.ttf);
+    src: local(Raleway-Regular), url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Raleway-Bold';
     font-style: normal;
     font-weight: 700;
-    src: local(Raleway), url(../fonts/Raleway-Bold.ttf);
+    src: local(Raleway-Bold), url(../fonts/Raleway-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Raleway-ExtraBold';
     font-style: normal;
     font-weight: 800;
-    src: local(Raleway), url(../fonts/Raleway-ExtraBold.ttf);
+    src: local(Raleway-ExtraBold), url(../fonts/Raleway-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'Raleway-Medium';
     font-style: normal;
     font-weight: 500;
-    src: local(Raleway), url(../fonts/Raleway-Medium.ttf);
+    src: local(Raleway-Medium), url(../fonts/Raleway-Medium.ttf);
 }
-
 
 @font-face {
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    src: local(Raleway), url(../fonts/Raleway-Regular.ttf);
+    src: local(Raleway-Regular), url(../fonts/Raleway-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Raleway-SemiBold';
     font-style: normal;
     font-weight: 600;
-    src: local(Raleway), url(../fonts/Raleway-SemiBold.ttf);
+    src: local(Raleway-SemiBold), url(../fonts/Raleway-SemiBold.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
     font-style: normal;
     font-weight: 400;
-    src: local(Roboto), url(../fonts/Roboto-Regular.ttf);
+    src: local(Roboto-Regular), url(../fonts/Roboto-Regular.ttf);
 }
 
+*{
+    box-sizing: border-box;
+}
 
+body{
+    margin: 0;
+}
 
