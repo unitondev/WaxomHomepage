@@ -1,8 +1,8 @@
 .header__menu-list{
-    font-size: 12px;
+    font-size: 14px;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     font-family: Raleway-Regular, sans-serif;
+    padding-inline-start: 0px; 
 }

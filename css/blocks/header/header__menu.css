@@ -1,5 +1,6 @@
 .header__menu{
-    /* width: 55%; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 17%;
 }
