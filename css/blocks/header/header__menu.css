@@ -1,6 +1,5 @@
 .header__menu{
-    max-height: 30px;
     /* width: 55%; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
