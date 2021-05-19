@@ -1,3 +1,4 @@
+@import url(/css/reset.css);
 @import url(/css/container.css);
 @import url(/css/blocks/header/header.css);
 @import url(/css/blocks/header/header__content.css);
@@ -6,7 +7,9 @@
 @import url(/css/blocks/header/header__menu.css);
 @import url(/css/blocks/header/header__menu-list.css);
 @import url(/css/blocks/header/header__menu-link.css);
+@import url(/css/blocks/header/header__menu-controls.css);
 @import url(/css/blocks/header/header__controls-link.css);
+@import url(/css/blocks/slider/slider.css);
 
 @font-face {
   font-family: "Montserrat-Light";
@@ -70,12 +73,4 @@
 
 body {
   margin: 0;
-}
-
-.wrap {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex: 1;
-  margin-left: 5%;
 }

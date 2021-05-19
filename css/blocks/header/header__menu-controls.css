@@ -1,0 +1,9 @@
+.header__menu-controls {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
