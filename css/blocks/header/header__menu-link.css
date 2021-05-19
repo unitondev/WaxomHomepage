@@ -1,8 +1,8 @@
-.header__menu-link{
-    list-style:  none;
-    text-align: center;
-    /* margin: 0px 31px 5px 0px; */
-    margin: 0rem 1rem 0.5rem 1rem;
-    /* 0.015% */
-    white-space: pre;
+.header__menu-link {
+  list-style: none;
+  text-align: center;
+  /* margin: 0px 31px 5px 0px; */
+  margin: 0rem 1rem 0.5rem 1rem;
+  /* 0.015% */
+  white-space: pre;
 }
