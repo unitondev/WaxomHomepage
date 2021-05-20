@@ -1,0 +1,33 @@
+.header__link_action-colors {
+}
+
+.header__link_action-colors:link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link_action-colors:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link_action-colors:hover {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+    hue-rotate(352deg) brightness(87%) contrast(84%);
+  text-decoration: none;
+}
+
+.header__link_action-colors:active {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+    hue-rotate(352deg) brightness(87%) contrast(84%);
+  text-decoration: none;
+}
+
+.header__link_action-colors:focus {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+    hue-rotate(352deg) brightness(87%) contrast(84%);
+  text-decoration: none;
+}

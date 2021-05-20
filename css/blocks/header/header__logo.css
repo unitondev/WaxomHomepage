@@ -3,32 +3,3 @@
   justify-content: center;
   align-items: center;
 }
-
-a:link {
-  color: white;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #c7b299;
-  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%) hue-rotate(352deg) brightness(87%) contrast(84%);
-  text-decoration: none;
-}
-
-a:active {
-  color: #c7b299;
-  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%) hue-rotate(352deg) brightness(87%) contrast(84%);
-  text-decoration: none;
-  border-color: #333;
-}
-
-a:focus {
-  color: #c7b299;
-  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%) hue-rotate(352deg) brightness(87%) contrast(84%);
-  text-decoration: none;
-}
