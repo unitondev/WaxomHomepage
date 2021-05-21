@@ -169,21 +169,22 @@ table {
   height: 1024px;
   background-size: cover;
   display: flex;
-  position: relative;
+  flex-direction: column;
 }
 
 .slider__control {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-grow: 1;
-  margin: auto 8%;
+  margin-top: 115px;
 }
 
 .slider__description {
   display: flex;
   flex-direction: column;
   width: 590px;
+  margin: 0 10%;
   color: white;
   text-align: center;
 }
@@ -259,12 +260,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  /* idk how to center this absolute element */
-  left: 50%;
-  width: 100px;
-  bottom: 30px;
-  color: white;
+  height: 115px;
 }
 
 .slide-pages__link {
