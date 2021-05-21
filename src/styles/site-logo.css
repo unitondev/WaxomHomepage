@@ -1,0 +1,6 @@
+.site-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}

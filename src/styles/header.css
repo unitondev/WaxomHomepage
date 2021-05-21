@@ -4,3 +4,8 @@
   width: 100%;
   margin-top: 15px;
 }
+
+.header__content {
+  padding: 30px;
+  display: flex;
+}

@@ -1,29 +1,29 @@
-.header__link_action-colors {
+.link_action-colors {
   text-decoration: none;
   text-align: center;
 }
 
-.header__link_action-colors:link {
+.link_action-colors:link {
   color: white;
 }
 
-.header__link_action-colors:visited {
+.link_action-colors:visited {
   color: white;
 }
 
-.header__link_action-colors:hover {
+.link_action-colors:hover {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
     hue-rotate(352deg) brightness(87%) contrast(84%);
 }
 
-.header__link_action-colors:active {
+.link_action-colors:active {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
     hue-rotate(352deg) brightness(87%) contrast(84%);
 }
 
-.header__link_action-colors:focus {
+.link_action-colors:focus {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
     hue-rotate(352deg) brightness(87%) contrast(84%);
