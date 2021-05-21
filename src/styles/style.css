@@ -125,45 +125,6 @@ table {
   flex-grow: 1;
 }
 
-@media (min-width: 768px) and (max-width: 1024px ) {
-    .header__content{
-      flex-direction: column;
-      align-items: stretch;
-    }
-
-    .site-logo{
-      justify-content: center;
-    }
-
-    .navigation-controls{
-      margin: auto;
-      justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 768px){
-  .header__content{
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .site-logo{
-    justify-content: center;
-  }
-
-  .menu{
-    flex-direction: column;
-  }
-
-  .navigation-list{
-    flex-direction: column;
-    line-height: 25px;
-  }
-
-  .navigation-controls{
-    justify-content: space-evenly;
-  }
-}
 .site-name {
   font-family: Raleway-Regular, sans-serif;
   font-size: 35px;
@@ -221,7 +182,7 @@ table {
 .slider__description {
   display: flex;
   flex-direction: column;
-  width: 590px;
+  max-width: 590px;
   margin: 0 10%;
   color: white;
   text-align: center;
@@ -327,4 +288,100 @@ table {
   width: 12px;
   border: 2px solid #c7b299;
   background-color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 768px) and (max-width: 1024px ) {
+    .header__content{
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .site-logo{
+      justify-content: center;
+    }
+
+    .navigation-controls{
+      justify-content: space-evenly;
+    }
+
+    .slider__control{
+      flex-direction: column;
+      margin-top: 160px;
+    }
+
+    .slider__description{
+      margin: auto
+    }
+
+    .arrow{
+      display: none;
+    }
+}
+
+@media (max-width: 768px){
+  .header__content{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-logo{
+    justify-content: center;
+  }
+
+  .menu{
+    flex-direction: column;
+  }
+
+  .navigation-list{
+    flex-direction: column;
+    line-height: 25px;
+  }
+
+  .navigation-controls{
+    justify-content: space-evenly;
+  }
+
+  .slider__control{
+    margin-top: 415px;
+    flex-direction: column;
+  }
+
+  .slider__description{
+    flex-wrap: wrap;
+    margin: auto
+  }
+
+  .slider__description_upper-text{
+    font-size: 20px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .slider__description_middle-text{
+    font-size: 30px;
+    height: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slider__description_lower-text{
+    font-size: 15px;
+  }
+
+  .slider__description_button{
+    margin-top: 300px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .slide-pages__dot{
+    height: 25px;
+    width: 25px;
+  }
+
+  .slide-pages__dot_action-border:hover{
+    height: 25px;
+    width: 25px;
+  }
 }
