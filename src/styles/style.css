@@ -1,5 +1,296 @@
-@import url(/src/styles/index.css);
-
 * {
   box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local(Montserrat-Light), url(../styles/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Raleway-Regular), url(../styles/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(Raleway-Bold), url(../styles/fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: local(Raleway-Bold), url(../styles/fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local(Raleway-Medium), url(../styles/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Raleway-Regular), url(../styles/fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: local(Raleway-SemiBold), url(../styles/fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Roboto-Regular), url(../styles/fonts/Roboto-Regular.ttf);
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.header__content {
+  padding: 30px;
+  display: flex;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.site-name {
+  font-family: Raleway-Regular, sans-serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 0.38;
+}
+
+.navigation-list {
+  font-size: 14px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat-Light, sans-serif;
+}
+
+.navigation-list__link {
+  list-style: none;
+  margin: 0px 11px 8px 16px;
+  white-space: pre;
+}
+
+.navigation-controls {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-grow: 0.5;
+  margin-left: auto;
+  margin-bottom: 2%;
+}
+
+.navigation-controls__button {
+  display: flex;
+}
+
+.slider {
+  background: gray url(../static/images/sliderBackground.png) no-repeat center;
+  height: 1024px;
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin: auto 8%;
+}
+
+.slider__description {
+  display: flex;
+  flex-direction: column;
+  width: 590px;
+  color: white;
+  text-align: center;
+}
+
+.slider__description_upper-text {
+  font-family: Raleway-Medium, sans-serif;
+  font-size: 36px;
+  height: 38px;
+}
+
+.slider__description_middle-text {
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 52px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.slider__description_lower-text {
+  font-family: Montserrat-Light, sans-serif;
+  font-size: 16px;
+  height: 62px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.slider__description_button {
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #998675;
+  width: 170px;
+  height: 53px;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 0px 3px #736357;
+  line-height: 53px;
+}
+
+.link_action-colors {
+  text-decoration: none;
+  text-align: center;
+}
+
+.link_action-colors:link {
+  color: white;
+}
+
+.link_action-colors:visited {
+  color: white;
+}
+
+.link_action-colors:hover {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+  hue-rotate(352deg) brightness(87%) contrast(84%);
+}
+
+.link_action-colors:active {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+  hue-rotate(352deg) brightness(87%) contrast(84%);
+}
+
+.link_action-colors:focus {
+  color: #c7b299;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
+  hue-rotate(352deg) brightness(87%) contrast(84%);
+}
+
+.slide-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* idk how to center this absolute element */
+  left: 50%;
+  width: 100px;
+  bottom: 30px;
+  color: white;
+}
+
+.slide-pages__link {
+}
+
+.slide-pages__dot {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+}
+
+.slide-pages__dot_action-border {
+}
+
+.slide-pages__dot_action-border:hover {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #c7b299;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.slide-pages__dot_action-border:active {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #c7b299;
+  background-color: rgba(255, 255, 255, 0);
 }
