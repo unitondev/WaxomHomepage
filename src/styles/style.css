@@ -290,7 +290,7 @@ table {
   margin-bottom: 5px;
 }
 
-.slider__description_button {
+.button {
   font-family: Raleway-ExtraBold, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -299,10 +299,20 @@ table {
   background-color: #998675;
   width: 170px;
   height: 53px;
-  margin: auto;
   border-radius: 3px;
   box-shadow: 0px 3px #736357;
   line-height: 53px;
+  text-align: center;
+}
+
+.button_horizontal-margin{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button_vertical-margin{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .link_action-colors {
@@ -435,34 +445,34 @@ table {
   margin: 10px 0;
 }
 
-.realizationOfIdeas{
+.realization-of-ideas{
   background-color: #fbfaf8;
 }
 
-.realizationOfIdeas-content{
+.realization-of-ideas-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 700px;
+  max-height: 720px;
   flex-grow: 1;
 }
 
-.realizationOfIdeas__header{
+.realization-of-ideas__header{
   font-family: Relaway-SemiBold, sans-serif;
   font-size: 30px;
   margin: 80px auto 0px auto;
 }
 
-.realizationOfIdeas__description{
+.realization-of-ideas__description{
   font-family: Montserrat-Light, sans-serif;
   font-size: 16px;
   line-height: 25px;
   text-align: center;
   max-width: 60%;
-  margin: 25px auto 10px auto;
+  margin: 25px auto 15px auto;
 }
 
-.realizationOfIdeas__screenshots{
+.realization-of-ideas__screenshots{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -471,19 +481,54 @@ table {
   width: 100%;
 }
 
-.realizationOfIdeas__screenshots_left{
+.realization-of-ideas__screenshots-left{
   position: relative;
   align-self: flex-start;
 }
 
-.realizationOfIdeas__screenshots_right{
+.realization-of-ideas__screenshots-right{
   position: absolute;
   align-self: flex-end;
 }
 
-.realizationOfIdeas__screenshots_center{
+.realization-of-ideas__screenshots-center{
   position: absolute;
 }
+
+.text-box{
+  background-image: linear-gradient(left, #211b19, #4b3226);
+  background-image: -o-linear-gradient(left, #211b19, #4b3226);
+  background-image: -moz-linear-gradient(left, #211b19, #4b3226);
+  background-image: -webkit-linear-gradient(left, #211b19, #4b3226);
+}
+
+.text-box__content{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.text-box__text{
+  margin: 40px 0px;
+}
+
+.text-box__header{
+  font-family: Raleway-Regular, sans-serif;
+  font-size: 28px;
+  color: white;
+}
+
+.text-box__beige-word{
+  color: #c7b299;
+}
+
+.text-box__gratitude{
+  font-family: Montserrat-Light, sans-serif;
+  font-size: 18px;
+  color: #615855;
+  line-height: 30px;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* header start */
@@ -520,21 +565,26 @@ table {
   }
   /* services end */
   /* realizationOfIdeas start */
-  .realizationOfIdeas__screenshots_left{
+  .realization-of-ideas__screenshots-left{
     width: 400px;
     height: auto;
   }
 
-  .realizationOfIdeas__screenshots_right{
+  .realization-of-ideas__screenshots-right{
     width: 400px;
     height: auto;
   }
 
-  .realizationOfIdeas__screenshots_center{
+  .realization-of-ideas__screenshots-center{
     width: 480px;
     height: auto;
   }
   /* realizationOfIdeas end */
+  /* .text-box start*/
+  .text-box__header{
+    font-size: 22px;
+  }
+  /* .text-box end*/
 }
 
 @media (max-width: 768px) {
@@ -586,10 +636,7 @@ table {
 
   .slider__description_lower-text {
     font-size: 15px;
-  }
-
-  .slider__description_button {
-    margin-top: 300px;
+    margin-bottom: 45px;
   }
 
   .arrow {
@@ -617,29 +664,51 @@ table {
   }
   /* services end */
    /* realizationOfIdeas start */
-   .realizationOfIdeas__header{
+   .realization-of-ideas__header{
     font-size: 20px;
     margin: 40px auto 0px auto;
    }
 
-   .realizationOfIdeas__description{
+   .realization-of-ideas__description{
      font-size: 15px;
      line-height: 20px;
      max-width: 80%;
    }
-   .realizationOfIdeas__screenshots_left{
+   .realization-of-ideas__screenshots-left{
     width: 200px;
     height: auto;
   }
 
-  .realizationOfIdeas__screenshots_right{
+  .realization-of-ideas__screenshots-right{
     width: 200px;
     height: auto;
   }
 
-  .realizationOfIdeas__screenshots_center{
+  .realization-of-ideas__screenshots-center{
     width: 250px;
     height: auto;
   }
   /* realizationOfIdeas end */
+  /* .text-box start*/
+  .text-box__content{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-box__text{
+    margin: 20px 0;
+  }
+
+  .text-box__header{
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .text-box__gratitude{
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+  }
+  /* .text-box end*/
 }
