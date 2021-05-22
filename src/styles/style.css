@@ -227,6 +227,7 @@ table {
 .link_action-colors {
   text-decoration: none;
   text-align: center;
+  transition: 300ms ease;
 }
 
 .link_action-colors:link {
@@ -241,21 +242,34 @@ table {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
-  transition: 300ms ease;
 }
 
 .link_action-colors:active {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
-  transition: 300ms ease;
 }
 
 .link_action-colors:focus {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
+}
+
+.button_action-colors{
   transition: 300ms ease;
+}
+
+.button_action-colors:active{
+  background-color: #5d554d;
+}
+
+.button_action-colors:focus{
+  background-color: #dbccbe;
+}
+
+.button_action-colors:hover{
+  background-color: #dbccbe;
 }
 
 .slide-pages {
