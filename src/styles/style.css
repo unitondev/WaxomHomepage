@@ -139,7 +139,7 @@ table {
 
 .navigation-list {
   font-size: 14px;
-  height: 50px;
+  height: auto;
   display: flex;
   align-items: center;
   font-family: Montserrat-Light, sans-serif;
@@ -153,10 +153,9 @@ table {
 
 .navigation-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
-  flex-grow: 0.5;
-  margin-left: auto;
+  flex-grow: 1;
   margin-bottom: 2%;
 }
 
@@ -183,7 +182,7 @@ table {
 .slider__description {
   display: flex;
   flex-direction: column;
-  width: 590px;
+  max-width: 590px;
   margin: 0 10%;
   color: white;
   text-align: center;
@@ -242,18 +241,21 @@ table {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
+  transition: 300ms ease;
 }
 
 .link_action-colors:active {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
+  transition: 300ms ease;
 }
 
 .link_action-colors:focus {
   color: #c7b299;
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
   hue-rotate(352deg) brightness(87%) contrast(84%);
+  transition: 300ms ease;
 }
 
 .slide-pages {
@@ -289,4 +291,168 @@ table {
   width: 12px;
   border: 2px solid #c7b299;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.services{
+  background-color: white;
+}
+
+.services-list{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 80px auto;
+}
+
+.services-list__link{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.services-list__icon{
+  width: 51px;
+  height: 51px;
+}
+
+.services-list__name{
+  font-family: Raleway-SemiBold, sans-serif;
+  font-size: 22px;
+  color: #555;
+  margin: 15px 0;
+}
+
+.services-list__description{
+  font-family: Montserrat-Light, sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.services-list__line{
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px ) {
+    /* header start */
+    .header__content{
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .site-logo{
+      justify-content: center;
+    }
+    /* header end */
+    /* slider start */
+    .navigation-controls{
+      justify-content: space-evenly;
+    }
+
+    .slider__control{
+      flex-direction: column;
+      margin-top: 160px;
+    }
+
+    .slider__description{
+      margin: auto
+    }
+
+    .arrow{
+      display: none;
+    }
+    /* slider end */
+    /* services start */
+    .services-list{
+      flex-direction: column;
+    }
+    /* services end */
+}
+
+@media (max-width: 768px){
+  /* header start */
+  .header__content{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-logo{
+    justify-content: center;
+  }
+
+  .menu{
+    flex-direction: column;
+  }
+
+  .navigation-list{
+    flex-direction: column;
+    line-height: 25px;
+  }
+
+  .navigation-controls{
+    justify-content: space-evenly;
+  }
+  /* header end */
+  /* slider start */
+  .slider__control{
+    margin-top: 415px;
+    flex-direction: column;
+  }
+
+  .slider__description{
+    flex-wrap: wrap;
+    margin: auto
+  }
+
+  .slider__description_upper-text{
+    font-size: 20px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .slider__description_middle-text{
+    font-size: 30px;
+    height: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slider__description_lower-text{
+    font-size: 15px;
+  }
+
+  .slider__description_button{
+    margin-top: 300px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .slide-pages__dot{
+    height: 25px;
+    width: 25px;
+  }
+
+  .slide-pages__dot_action-border:hover{
+    height: 25px;
+    width: 25px;
+  }
+  /* slider end */
+  /* services start */
+  .services-list{
+    flex-direction: column;
+  }
+
+  .services-list__name{
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  /* services end */
 }
