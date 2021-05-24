@@ -881,6 +881,26 @@ table {
   margin: 0 5px;
 }
 
+.partners{
+  background: url(../static/images/partners-background.png) no-repeat center;
+  background-size: cover;
+}
+
+.partners-wrapper{
+  padding: 150px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner-logo{
+  max-width: 100%;
+}
+
+.partner-logo-wrapper{
+ margin: 0 20px
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* header start */
@@ -984,6 +1004,11 @@ table {
   /* counters end */
   /* recent-posts start */
   /* recent-posts end */
+  /* partners start */
+  .partners-wrapper{
+    padding: 100px 0;
+  }
+  /* partners end */
 }
 
 @media (max-width: 768px) {
@@ -1204,4 +1229,9 @@ table {
     width: 12px;
   }
   /* recent-posts end */
+  /* partners start */
+  .partners-wrapper{
+    padding: 50px 0;
+  }
+  /* partners end */
 }
