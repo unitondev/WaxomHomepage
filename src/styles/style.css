@@ -106,6 +106,21 @@ table {
   margin: 0 auto;
 }
 
+.title {
+  font-family: Raleway-SemiBold, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #555555;
+}
+
+.description-text {
+  font-family: Montserrat-Light, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -202,10 +217,8 @@ table {
 }
 
 .slider__description_lower-text {
-  font-family: Montserrat-Light, sans-serif;
-  font-size: 16px;
   height: 62px;
-  line-height: 25px;
+  color: white;
   margin-bottom: 5px;
 }
 
@@ -331,11 +344,8 @@ table {
 }
 
 .services-list__description {
-  font-family: Montserrat-Light, sans-serif;
   font-size: 14px;
-  color: #8c8c8c;
   margin: 15px 0;
-  text-align: center;
   line-height: 18px;
 }
 
@@ -359,17 +369,11 @@ table {
   text-align: center;
 }
 
-.realization-of-ideas__header {
-  font-family: Relaway-SemiBold, sans-serif;
-  font-size: 30px;
-  margin: 80px auto 0px auto;
+.realization-of-ideas__title{
+  margin-top: 80px;
 }
 
 .realization-of-ideas__description {
-  font-family: Montserrat-Light, sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
   max-width: 60%;
   margin: 25px auto 15px auto;
 }
@@ -424,10 +428,10 @@ table {
 }
 
 .text-box__gratitude {
-  font-family: Montserrat-Light, sans-serif;
   font-size: 18px;
-  color: #615855;
   line-height: 30px;
+  text-align: left;
+  color: #615855;
 }
 
 .latest-projects__content {
@@ -438,19 +442,9 @@ table {
   margin-top: 80px;
 }
 
-.latest-projects__title {
-  font-family: Raleway-SemiBold, sans-serif;
-  font-size: 30px;
-  color: #555555;
-}
 
 .latest-projects__description {
-  font-family: Montserrat-Light, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
   max-width: 800px;
-  color: #8c8c8c;
   margin-top: 20px;
   width: 90%;
 }
@@ -528,7 +522,6 @@ table {
 }
 
 .project__category {
-  font-family: Montserrat-Light, sans-serif;
   font-size: 14px;
   color: #d7d7d6;
   text-align: left;
@@ -649,18 +642,13 @@ table {
   filter: brightness(0) saturate(100%) invert(13%) sepia(1%) saturate(0%) hue-rotate(13deg) brightness(106%) contrast(83%);
 }
 
-.video-presentation-name {
-  font-family: Raleway-Medium, sans-serif;
-  font-size: 30px;
+.video-presentation__title {
   color: white;
   margin-top: 30px;
 }
 
 .video-presentation-description {
-  font-family: Montserrat-Light, sans-serif;
-  font-size: 16px;
   color: white;
-  line-height: 25px;
   margin-top: 20px;
 }
 
@@ -690,25 +678,17 @@ table {
   margin-top: 100px;
 }
 
-.description__header {
-  font-family: Raleway-SemiBold, sans-serif;
-  font-size: 30px;
-  color: #555555;
-  margin-bottom: 40px;
-}
-
-.description__text {
-  font-family: Montserrat-Light, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+.for-mobile__description{
   text-align: left;
-  color: #555555;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .description__features {
   margin-left: 40px;
   min-width: 80%;
+  /* BIG QUESTION */
+  list-style: url(/src/styles/icons/feature_before-element.svg);
 }
 
 .description__item {
@@ -720,16 +700,6 @@ table {
   font-family: Montserrat-Light, sans-serif;
   font-size: 16px;
   color: #8c8c8c;
-}
-
-.description__feature::before {
-  display: inline-block;
-  content: url(src/styles/icons/feature_before-element.svg);
-  width: 21px;
-  height: 21px;
-  content: "";
-  /* background: url(src/styles/icons/feature_before-element.svg); */
-  background: rgba(75, 64, 52, 0.5);
 }
 
 .counters__content{
@@ -769,6 +739,12 @@ table {
   margin-bottom: 15px;
 }
 
+.recent-posts__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* header start */
@@ -804,7 +780,7 @@ table {
     flex-direction: column;
   }
   /* services end */
-  /* realizationOfIdeas start */
+  /* realization-of-ideas start */
   .realization-of-ideas__screenshots-left {
     width: 400px;
     height: auto;
@@ -819,7 +795,7 @@ table {
     width: 480px;
     height: auto;
   }
-  /* realizationOfIdeas end */
+  /* realization-of-ideas end */
   /* .text-box start*/
   .text-box__header {
     font-size: 22px;
@@ -846,10 +822,6 @@ table {
     align-items: center;
   }
 
-  .description__text {
-    text-align: center;
-  }
-
   .description__features {
     margin-left: 0;
     margin-bottom: 30px;
@@ -874,9 +846,20 @@ table {
     height: 30px;
   }
   /* counters end */
+  /* recent-posts start */
+  /* recent-posts end */
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    max-width: 90%;
+  }
+
+  .description-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
   /* header start */
   .header__content {
     flex-direction: column;
@@ -926,7 +909,6 @@ table {
   }
 
   .slider__description_lower-text {
-    font-size: 13px;
     margin-bottom: 45px;
   }
 
@@ -960,16 +942,12 @@ table {
     margin-bottom: 0;
   }
   /* services end */
-  /* realizationOfIdeas start */
-  .realization-of-ideas__header {
-    font-size: 20px;
-    margin: 40px auto 0px auto;
-    max-width: 90%;
+  /* realization-of-ideas start */
+  .realization-of-ideas__title{
+    margin-top: 40px;
   }
 
   .realization-of-ideas__description {
-    font-size: 15px;
-    line-height: 20px;
     max-width: 80%;
     max-width: 90%;
   }
@@ -987,7 +965,7 @@ table {
     width: 250px;
     height: auto;
   }
-  /* realizationOfIdeas end */
+  /* realization-of-ideas end */
   /* .text-box start*/
   .text-box__content {
     flex-direction: column;
@@ -1005,36 +983,19 @@ table {
     text-align: center;
     line-height: 30px;
   }
-
-  .text-box__gratitude {
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-  }
   /* .text-box end*/
   /* latest-products start */
-  .latest-projects__title {
-    font-size: 20px;
-  }
-
-  .latest-projects__description {
-    font-size: 10px;
-    line-height: 15px;
-  }
-
   .project__photo {
     width: 80vw;
   }
   /* latest-products end */
   /* video-presentation start */
-  .video-presentation-name {
+  .video-presentation__title {
     font-size: 15px;
   }
 
   .video-presentation-description {
     max-width: 80%;
-    font-size: 12px;
-    line-height: 17px;
   }
   /* video-presentation end */
   /* for-mobile start */
@@ -1049,19 +1010,10 @@ table {
     display: none;
   }
 
-  .description__header {
-    font-size: 20px;
-  }
-
   .for-mobile-description {
     width: 80%;
     margin: 0 15px;
     align-items: center;
-  }
-
-  .description__text {
-    text-align: center;
-    font-size: 12px;
   }
 
   .description__features {
@@ -1093,4 +1045,6 @@ table {
     height: 20px;
   }
   /* counters end */
+  /* recent-posts start */
+  /* recent-posts end */
 }
