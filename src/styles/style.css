@@ -507,6 +507,7 @@ table {
   position: relative;
   margin-bottom: 30px;
   background-color: #fbfaf8;
+  flex-basis: 30%;
 }
 
 .project__description {
