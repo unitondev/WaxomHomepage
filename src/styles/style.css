@@ -497,7 +497,7 @@ table {
   color: white;
 }
 
-.projects__list {
+.cards__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -505,7 +505,7 @@ table {
   margin-bottom: 30px;
 }
 
-.project {
+.card {
   display: block;
   position: relative;
   margin-bottom: 30px;
@@ -513,11 +513,11 @@ table {
   flex-basis: 30%;
 }
 
-.project__description {
+.card__description {
   padding: 20px;
 }
 
-.project__name {
+.card__name {
   display: block;
   font-family: Raleway-Medium, sans-serif;
   font-size: 20px;
@@ -525,7 +525,7 @@ table {
   text-align: left;
 }
 
-.project__category {
+.card-description {
   display: block;
   font-size: 14px;
   color: #d7d7d6;
@@ -568,33 +568,33 @@ table {
   text-decoration: none;
 }
 
-.project_action-active {
+.card_action-active {
   transition: 500ms;
 }
 
-.project_action-active:hover {
+.card_action-active:hover {
   background-color: #362f2d;
 }
 
-.project_action-active:hover > .project__description > .project__name {
+.card_action-active:hover > .card__description > .card__name {
   color: #d7d7d6;
   transition: 500ms;
 }
 
-.project_action-active:hover > .project__description > .project__category {
+.card_action-active:hover > .card__description > card-description {
   color: #c7b299;
   transition: 500ms;
 }
 
-.project_action-active:hover > .project__photo {
+.card_action-active:hover > .card__photo {
   filter: brightness(70%) blur(0.8px);
 }
 
-.project_action-active:hover > .projects__loupe {
+.card_action-active:hover > .projects__loupe {
   opacity: 1;
 }
 
-.project_action-active:hover > .projects__link {
+.card_action-active:hover > .projects__link {
   opacity: 1;
 }
 
@@ -775,7 +775,7 @@ table {
   margin-top: 10px;
 }
 
-.recent-posts__projects__list{
+.recent-posts__cards__list{
   margin-bottom: 20px;
 }
 
@@ -835,11 +835,11 @@ table {
   flex-basis: 40%;
 }
 
-.project_action-active:hover >.calendar > .calendar__day-of-month{
+.card_action-active:hover >.calendar > .calendar__day-of-month{
   background-color: #c7b299;
 }
 
-.project_action-active:hover > .calendar > .calendar__month{
+.card_action-active:hover > .calendar > .calendar__month{
   background-color: #a48d72;
 }
 
@@ -859,7 +859,7 @@ table {
   width: 9px;
 }
 
-.project__photo-wrapper{
+.card__photo-wrapper{
   position: relative;
 }
 
@@ -1347,7 +1347,7 @@ table {
   }
   /* .text-box end*/
   /* latest-products start */
-  .project__photo {
+  .card__photo {
     width: 70vw;
   }
   /* latest-products end */
