@@ -121,6 +121,26 @@ table {
   color: #8c8c8c;
 }
 
+.link_color-on-action {
+  text-decoration: none;
+  text-align: center;
+  transition: 300ms ease;
+}
+
+.link_color-on-action:link {
+  color: inherit;
+}
+
+.link_color-on-action:visited {
+  color: inherit;
+}
+
+.link_color-on-action:active,
+.link_color-on-action:focus,
+.link_color-on-action:hover {
+  color: #c7b299;
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -144,6 +164,7 @@ table {
   font-family: Raleway-Regular, sans-serif;
   font-size: 35px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .menu {
@@ -158,12 +179,17 @@ table {
   display: flex;
   align-items: center;
   font-family: Montserrat-Light, sans-serif;
+  color: white;
 }
 
-.navigation-list__link {
+.navigation-list-item {
   list-style: none;
   margin: 0px 11px 8px 16px;
   white-space: pre;
+}
+
+.navigation-link{
+  color: white;
 }
 
 .navigation-controls {
@@ -247,24 +273,13 @@ table {
   margin-bottom: auto;
 }
 
-.link_action-colors {
-  text-decoration: none;
-  text-align: center;
+.svg_color-on-action{
   transition: 300ms ease;
 }
 
-.link_action-colors:link {
-  color: white;
-}
-
-.link_action-colors:visited {
-  color: white;
-}
-
-.link_action-colors:active,
-.link_action-colors:focus,
-.link_action-colors:hover {
-  color: #c7b299;
+.svg_color-on-action:active,
+.svg_color-on-action:focus,
+.svg_color-on-action:hover{
   filter: brightness(0) saturate(100%) invert(81%) sepia(26%) saturate(269%)
     hue-rotate(352deg) brightness(87%) contrast(84%);
 }
@@ -988,27 +1003,27 @@ table {
   border-bottom: 1px solid #252525;
 }
 
-.footer-link_action-colors{
+.footer-link_color-on-action{
   text-decoration: none;
 }
 
-.footer-link_action-colors:hover,
-.footer-link_action-colors:active,
-.footer-link_action-colors:focus{
+.footer-link_color-on-action:hover,
+.footer-link_color-on-action:active,
+.footer-link_color-on-action:focus{
   color: #c7b299;
 }
 
-.footer-link_action-colors:visited{
+.footer-link_color-on-action:visited{
   color: white;
 }
 
-.footer-link_action-colors:hover > .footer__recent-post-date{
+.footer-link_color-on-action:hover > .footer__recent-post-date{
   filter: none;
   color: white;
   transition: 300ms ease;
 }
 
-.footer-link_action-colors:hover > .footer__recent-post-small-description{
+.footer-link_color-on-action:hover > .footer__recent-post-small-description{
   color: #c7b299;
   transition: 300ms ease;
 }
